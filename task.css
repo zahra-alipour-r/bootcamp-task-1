@@ -1,0 +1,138 @@
+/*reset*/
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+html{
+    direction: rtl;
+    font-size: 62.5%;
+}
+
+/* rootvariable*/
+
+:root{
+    --color-button: #219F95;
+    --color-text:#234894;
+    --color-lightgray:#696969;
+    --color-name:#1E1E1E;
+    --color-white:#FFFFFF;
+ 
+}
+
+.header{
+    font-weight: 900;
+    font-size: 2.2rem;
+    text-align: right;
+    margin: 2rem;
+}
+
+/* button*/
+
+.button{
+    outline: 0;
+    border: 0;
+    padding:1.5rem 1.4rem ;
+    border-radius: 8px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    background-color:var(--color-button);
+    
+
+
+}
+
+.card{
+    
+    margin: 20px;
+    max-width: 50rem;
+}
+.maincadr{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+@media screen and (min-width:500px) and (max-width:800px) {
+    .maincadr{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+}
+@media screen and (min-width:801px){
+    .maincadr{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    
+    }
+}
+
+.card__top{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+    
+ 
+}
+
+.card__top-image{
+    display: flex;
+    align-items: center;
+ 
+}
+.card__top__content__document{
+    margin-right: 1rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    
+}
+.content-color-blue{
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.content-color-dark{
+    color: var(--color-name);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.card__top__content__date{
+    align-self: flex-start;
+    margin: 0.7rem;
+    color: var(--color-lightgray);
+}
+
+.card_body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap:1.5rem;
+    margin: 1.5rem;
+}
+.card__body__section_1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/ -1;
+}
+.card__body__section_first{
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+.card__body__section_second{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--color-lightgray);
+}
+.card__body__section_4{
+    justify-self:self-end;
+    
+}
+.image{
+    border-radius: 1.6rem;
+
+}
